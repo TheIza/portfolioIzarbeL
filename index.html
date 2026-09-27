@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio personal de Izarbe Lanuza" />
+    <title >Izarbe Lanuza · Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    
+  </head>
+
+  <body>
+    <div class="cursor"></div>
+    <header class="cabecera">
+      <a class="tituloAmarillo" href="#inicio">Izarbe Lanuza</a>
+
+      <nav class="navegacion">
+        <a class="linkAmarillo" href="#inicio"><strong>Inicio</strong></a>
+        <a class="linkAmarillo" href="#sobre-mi"><strong>Sobre mí</strong></a>
+        <a class="linkAmarillo" href="#habilidades"><strong>Habilidades</strong></a>
+        <a class="linkAmarillo" href="#proyectos"><strong>Proyectos</strong></a>
+        <a class="linkAmarillo" href="#formacion"><strong>Formación</strong></a>
+        <a class="linkAmarillo" href="#contacto"><strong>Contacto</strong></a>
+         <button id="boton-tema" type="button" aria-label="Cambiar tema"> ☀️ Claro </button>
+        
+         <select id="selector-idioma" style="color: white; background-color: black;" aria-label="Seleccionar idioma" aria-placeholder="ES">
+          <option value="index.html" selected>ES</option>
+          <option value="index_ca.html">CA</option>
+          <option value="index_en.html">EN</option>
+        </select>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section id="inicio" class="contenedor-seccion hero">
+        <p class="etiqueta-pequena">Portfolio personal · DAM</p>
+        <h1>Hola, soy <span class="amarillo">Izarbe Lanuza</span> </h1> 
+
+        <p class="introduccion">
+          Estudiante de Desarrollo de Aplicaciones Multiplataforma (DAM). Me
+          interesa la programación y el desarrollo backend, especialmente la
+          creación de aplicaciones, la gestión de datos y la lógica de los
+          proyectos.
+        </p>
+
+        <dl class="informacion-rapida">
+          <div>
+            <dt>Ubicación</dt>
+            <dd>Reus, Catalunya</dd>
+          </div>
+
+          <div>
+            <dt>Estudios actuales</dt>
+            <dd>DAM 2 · INS Baix Camp</dd>
+          </div>
+
+          <div>
+            <dt>Email</dt>
+            <dd>
+              <a class="mail" style="color: white" href="mailto:izarbelanuza06@gmail.com" target="_blank" >izarbelanuza06@gmail.com</a
+              >
+            </dd>
+          </div>
+        </dl>
+
+        <a class="linkAmarillo boton-principal" href="#proyectos">Ver proyectos↗</a>
+      </section>
+
+      <!-- ============ SOBRE MÍ ============ -->
+      <section
+        id="sobre-mi"
+        class="contenedor-seccion bloque-seccion"
+        aria-labelledby="titulo-sobre-mi"
+      >
+        <p class="etiqueta-pequena">01 · Sobre mí</p>
+        <h2 id="titulo-sobre-mi">Conóceme un poco</h2>
+
+        <p>
+          Soy estudiante de Desarrollo de Aplicaciones Multiplataforma. <br />
+          Durante mi formación he trabajado con: Java, PHP, MySQL, HTML, CSS,
+          JavaScript y WordPress.
+        </p>
+
+        <br />
+        <p>
+          Me interesa especialmente el desarrollo backend, la programación y la
+          gestión de datos. Me gusta aprender haciendo proyectos y seguir
+          mejorando mis conocimientos para trabajar en este ámbito.
+        </p>
+      </section>
+
+      <!-- ============ HABILIDADES ============ -->
+      <section
+        id="habilidades"
+        class="contenedor-seccion bloque-seccion"
+        aria-labelledby="titulo-habilidades"
+      >
+        <p class="etiqueta-pequena">02 · Habilidades</p>
+        <h2 id="titulo-habilidades">Qué lenguajes que he trabajado</h2>
+
+        <ul class="rejilla-habilidades">
+          <li class="tarjeta-habilidad">
+            <h3>Java</h3>
+            <p>POO, lógica y estructuras de datos.</p>
+          </li>
+
+          <li class="tarjeta-habilidad">
+            <h3>PHP</h3>
+            <p>Desarrollo web y aplicaciones dinámicas.</p>
+          </li>
+
+          <li class="tarjeta-habilidad">
+            <h3>MySQL - PL/SQL</h3>
+            <p>Consultas, relaciones y bases de datos.</p>
+          </li>
+
+          <li class="tarjeta-habilidad">
+            <h3>HTML - CSS</h3>
+            <p>Maquetación y diseño responsive.</p>
+          </li>
+
+          <li class="tarjeta-habilidad">
+            <h3>JavaScript</h3>
+            <p>Interacción y lógica en el navegador.</p>
+          </li>
+
+          <li class="tarjeta-habilidad">
+            <h3>WordPress</h3>
+            <p>Personalización y mantenimiento web.</p>
+          </li>
+          <li class="tarjeta-habilidad">
+            <h3>XML - JSON</h3>
+            <p>Almacenamiento e intercambio de datos</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ============ PROYECTOS ============ -->
+      <section
+        id="proyectos"
+        class="contenedor-seccion bloque-seccion"
+        aria-labelledby="titulo-proyectos"
+      >
+        <p class="etiqueta-pequena">03 · Proyectos</p>
+        <h2 id="titulo-proyectos">Lo que he hecho</h2>
+
+        <p class="nota-seccion">
+          Filtra por tecnología para encontrar los proyectos que te interesen.
+        </p>
+
+        <div
+          class="filtros"
+          role="group"
+          aria-label="Filtrar proyectos por tecnología"
+        >
+          <button class="activo" data-filtro="todos" aria-pressed="true">
+            Todos
+          </button>
+          <button data-filtro="java" aria-pressed="false">Java</button>
+          <button data-filtro="php" aria-pressed="false">PHP</button>
+        </div>
+
+        <p class="estado-filtro" aria-live="polite">
+          Mostrando <strong id="cantidad-proyectos">3</strong> proyectos
+        </p>
+
+        <ul class="lista-proyectos">
+          <li class="tarjeta-proyecto" data-categoria="java">
+            <span class="tipo-proyecto">Java · POO</span>
+            <h3>Dungeon Quest</h3>
+            <p>Juego de mazmorras 6x6 desarrollado en Java.</p>
+
+            <a class="linkAmarillo" href="https://github.com/TheIza/DungeonQuest-Proyecto-AEA2" target="_blank" >Ver en GitHub↗</a>
+          </li>
+
+          <li class="tarjeta-proyecto" data-categoria="java">
+            <span class="tipo-proyecto">Java · POO</span>
+            <h3>Batallas Pokémon</h3>
+            <p>Proyecto de programación orientada a objetos.</p>
+
+            <a class="linkAmarillo" href="https://github.com/TheIza/PokMonPOO" target="_blank" >Ver en GitHub↗</a>
+            
+          </li>
+
+          <li class="tarjeta-proyecto" data-categoria="php">
+            <span class="tipo-proyecto">PHP · Laravel</span>
+            <h3 >Tienda Online</h3>
+            <p>
+              Web básica con Laravel para gestionar un catálogo de productos.
+            </p>
+            <a class="linkAmarillo" href="https://github.com/TheIza/LetsPlay_laravel_AEA5_APIs" target="_blank" >Ver en GitHub</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <!-- ============ FORMACIÓN Y CERTIFICADOS ============ -->
+      <section
+        id="formacion"
+        class="contenedor-seccion bloque-seccion"
+        aria-labelledby="titulo-formacion"
+      >
+        <p class="etiqueta-pequena">04 · Formación</p>
+        <h2 id="titulo-formacion">Estudios</h2>
+        <br>
+<h3 class="titulo-certificados">Formación</h3>
+        <ul class="rejilla-formacion">
+          <li class="tarjeta-formacion">
+            <span>2025 — actualidad</span>
+            <h3>CFGS Desarrollo de Aplicaciones Multiplataforma</h3>
+            <p>INS Baix Camp · Reus</p>
+          </li>
+
+          <li class="tarjeta-formacion">
+            <span>2022 — 2024</span>
+            <h3>CFGM Sistemas Microinformáticos y Redes</h3>
+            <p>INS Vidal i Barraquer</p>
+          </li>
+
+          <li class="tarjeta-formacion">
+            <span>2018 — 2022</span>
+            <h3>ESO</h3>
+            <p>Pi del Burgar</p>
+          </li>
+        </ul>
+
+        <h3 class="titulo-certificados">Formación no reglada</h3>
+
+<ul class="rejilla-formacion">
+  <li class="tarjeta-formacion">
+    <span>Java</span>
+    <h3>Java desde 0: Orientación a Objetos</h3>
+    <a class="linkAmarillo" href="https://openwebinars.net/cert/v8Ip" target="_blank" rel="noopener">
+      Ver certificado
+    ↗</a>
+  </li>
+
+  <li class="tarjeta-formacion">
+    <span>GitHub · Markdown</span>
+    <h3>Gestión de documentación técnica con GitHub y Markdown</h3>
+    <a class="linkAmarillo" href="https://openwebinars.net/cert/rXat" target="_blank" rel="noopener">
+      Ver certificado
+    ↗</a>
+  </li>
+
+  <li class="tarjeta-formacion">
+    <span>PHP</span>
+    <h3>PHP: Ampliando Conceptos</h3>
+    <a class="linkAmarillo" href="https://openwebinars.net/cert/tMzc" target="_blank" rel="noopener">
+      Ver certificado
+    ↗</a>
+  </li>
+
+  <li class="tarjeta-formacion">
+    <span>SQL</span>
+    <h3>Curso de SQL desde Cero</h3>
+    <a class="linkAmarillo" href="https://openwebinars.net/cert/QHpx" target="_blank" rel="noopener">
+      Ver certificado
+    ↗</a>
+  </li>
+
+  <li class="tarjeta-formacion">
+    <span>PHP</span>
+    <h3>PHP Fundamentals</h3>
+    <a class="linkAmarillo" href="https://openwebinars.net/cert/SZAe" target="_blank" rel="noopener">
+      Ver certificado
+    ↗</a>
+  </li>
+
+  <li class="tarjeta-formacion">
+    <span>Git</span>
+    <h3>Curso de Git</h3>
+    <a class="linkAmarillo" href="https://openwebinars.net/cert/S8x0" target="_blank" rel="noopener">
+      Ver certificado
+    ↗</a>
+  </li>
+
+  <li class="tarjeta-formacion">
+    <span>Java</span>
+    <h3>Java desde 0: Introducción</h3>
+    <a class="linkAmarillo" href="https://openwebinars.net/cert/JAlq" target="_blank" rel="noopener">
+      Ver certificado
+    ↗</a>
+  </li>
+
+  <li class="tarjeta-formacion">
+    <span>Linux</span>
+    <h3>Curso de Shell en Linux</h3>
+    <a class="linkAmarillo" href="https://openwebinars.net/cert/rJbv" target="_blank" rel="noopener">
+      Ver certificado
+    ↗</a>
+  </li>
+</ul>
+      </section>
+
+      <!-- ============ CONTACTO ============ -->
+      <section id="contacto" class="contenedor-seccion bloque-seccion" aria-labelledby="titulo-contacto">
+        <p class="etiqueta-pequena">05 · Contacto</p>
+        <br>
+        <div class="tarjeta-contacto">
+          
+          <h2 id="titulo-contacto">¿Hablamos?</h2>
+
+          <p>Aquí puedes encontrar mis datos de contacto y perfiles.</p>
+
+          <ul class="enlaces-contacto">
+            <li>
+              <a class="linkAmarillo" href="mailto:izarbelanuza06@gmail.com" target="_blank">Email↗</a>
+            </li>
+
+            <li>
+              <a class="linkAmarillo" href="https://github.com/TheIza" target="_blank">GitHub↗</a>
+            </li>
+
+            <li>
+              <a class="linkAmarillo" href="https://www.linkedin.com/in/izarbe-lanuza-555a0925a/" target="_blank">LinkedIn↗</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pie-pagina">
+      <span>© 2026 Izarbe Lanuza</span>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
