@@ -1,9 +1,3 @@
-// ==========================================================
-//  FILTRO DE PROYECTOS
-//  Muestra u oculta las tarjetas de proyecto según el botón
-//  de filtro en el que se haga clic.
-// ==========================================================
-
 const botonesFiltro = document.querySelectorAll('.filtros button');
 const tarjetasProyecto = document.querySelectorAll('.tarjeta-proyecto');
 const cantidadProyectos = document.querySelector('#cantidad-proyectos');
@@ -29,8 +23,6 @@ function aplicarFiltro(filtro) {
 
 botonesFiltro.forEach((boton) => {
   boton.addEventListener('click', () => {
-
-    // Actualiza el estado visual y de accesibilidad de los botones
     botonesFiltro.forEach((btn) => {
       btn.classList.remove('activo');
       btn.setAttribute('aria-pressed', 'false');
@@ -45,15 +37,8 @@ botonesFiltro.forEach((boton) => {
 
 actualizarCantidad();
 
-
-// ==========================================================
-//  CAMBIO DE TEMA
-//  Guarda el tema elegido para mantenerlo al cambiar de idioma.
-// ==========================================================
-
 const botonTema = document.querySelector('#boton-tema');
 
-// Carga el tema guardado
 if (localStorage.getItem('tema') === 'claro') {
   document.body.classList.add('tema-claro');
   botonTema.textContent = '🌙 Oscuro';
@@ -73,12 +58,6 @@ botonTema.addEventListener('click', () => {
     botonTema.setAttribute('aria-label', 'Cambiar a tema claro');
   }
 });
-
-
-// ==========================================================
-//  CAMBIO DE IDIOMA
-//  Cambia de página al seleccionar otro idioma.
-// ==========================================================
 
 const selectorIdioma = document.querySelector("#selector-idioma");
 
