@@ -594,4 +594,8 @@ body.tema-claro .cursor.grande {
   border-color: #9cabc2;
 }
 
+body.tema-claro .amarillo {
+  color: var(--azul);
+}
+
 
